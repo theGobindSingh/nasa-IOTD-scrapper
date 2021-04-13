@@ -2,7 +2,7 @@ import os
 import requests #pip install requests
 import json
 
-loc = "D:/Nasa scrapper/New folder" #download location
+loc = "" #enter the download location here with "/" slashes and not "\" slashes
 
 url_base="https://www.nasa.gov/api/2/ubernode/"
 
