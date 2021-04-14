@@ -2,8 +2,17 @@ import os
 import requests #pip install requests
 import json
 
-loc = "" #enter the download location here with "/" slashes and not "\" slashes
+folder_name="nas_scr"     #This folder will be created in Documents
 
+docs = os.path.expanduser("~/Documents").replace("\\","/") + "/"
+
+try:
+    os.mkdir(docs+folder_name)
+except:
+    print("")
+
+loc = docs+folder_name
+print ("save location: "+loc)
 url_base="https://www.nasa.gov/api/2/ubernode/"
 
 uNum=[470022,470016,469987,469945,469909,469849,469816,469620,469738,469627,469619,469571,469478,469416,469211,469253,469179,469209,469178,469142]
